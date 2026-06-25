@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click Event Listener</title>
+</head>
+<body>
+    <h1 id="h">0</h1>
+    <button onclick="getClick()">+</button>
+    <button onclick="getClicked()">-</button>
+    <button ondblclick="alert('double clicked')">double click here</button>
+    <script>
+        let count=0;
+        let ele=document.getElementById("h")
+        function getClick()
+        {
+            ele.innerHTML=++count;
+        }
+        function getClicked()
+        {
+            ele.innerHTML=--count;
+        }
+    </script>
+</body>
+</html>

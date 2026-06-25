@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANK BALANCE</title>
+</head>
+<body>
+    <script>
+        var bal = 10000
+        var ch = Number(prompt("Enter your choice : \n 1.Check balance \n 2.Withdraw \n 3.Deposit \n 4.Exit"))
+        
+        switch(ch)
+        {
+            case 1:
+                document.write("YOUR BALANCE IS :- "+ bal)
+                break;
+            case 2:
+                document.write("1000rs WITHDRAW SUCCESSFULLY !!\n")
+                document.write("\nAVAILABLE BALANCE IS :-"+ (bal-1000))
+                break;
+            case 3:
+                document.write("1000rs DEPOSITED SUCCESSFULLY !!\n")
+                document.write("\nAVAILABLE BALANCE IS :- "+(bal+1000))
+                break;
+            case 4:
+                document.write("THANK YOU! FOR CHOOSING US !!")
+                break;
+            default:
+                document.write("INVALID CHOICE....PLEASE TRY AGAIN")
+                break;
+        }
+    </script>
+</body>
+</html>

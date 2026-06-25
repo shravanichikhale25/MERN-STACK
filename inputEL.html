@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input Event Listener</title>
+</head>
+<body>
+    <!-- Event listner out script/js -->
+    <input type="text" oninput="getValue()" id="name" placeholder="enter here......">
+    <script>
+        let ele=document.getElementById('name');
+        function getValue()
+        {
+            console.log(ele.value); 
+            // console.log(name.value); for no count 
+        }
+    </script>
+
+    <!-- Event listner in script/js
+    <input type="text" id="name" placeholder="enter here.....">
+    <script>
+        let ele=document.getElementById("name")
+        ele.addEventListener("input",()=>{
+            console.log(ele.value);    
+        })
+    </script> -->
+</body>
+</html>
